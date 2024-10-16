@@ -86,7 +86,7 @@ print ('la parola è palindroma?')
 print((risultato))
 '''
 # In[]
-
+'''
 a='0123456789'
 
 print(a[-1]) #numero  posizioni -1
@@ -97,8 +97,28 @@ print(a[:7]) #prime sette posizioni
 print(a[1:]) #tutte le posizioni dalla 1 in poi
 print(a[:]) #tutte le posizioni
 print(a[1:7:2]) 
+'''
 
+# In[]
 
+#stesso codice della parola palindroma, ma con l'inserimento dell'utente della parola
+
+def palindromo(a):  # funzione per verificare se la stringa è palindroma
+    n = len(a)  
+    i = 0  # inizializzazione dell'indice
+    
+    while i < n / 2 and a[i] == a[n - 1 - i]:  
+        i += 1  
+    
+    if i != n / 2:  # se i non ha raggiunto la metà, non è palindroma
+        return False
+    else:
+        return True
+
+parola = input("Inserisci una parola: ")
+risultato = palindromo(parola)
+print("La parola è palindroma?" )
+print(risultato)
 
 
 
