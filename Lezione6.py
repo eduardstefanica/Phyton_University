@@ -1,5 +1,5 @@
 a0 = ' programmazione dei calcolatori con laboratorio     '
-a1 = ' linguaggi di programmazione:c; python,java'
+a1 = ' linguaggi di programmazione:c; python'
 
 def lettera(c):
     return c >= 'a' and c <= 'z'
@@ -21,7 +21,7 @@ def conta_parole( a ):
     parole = 0
     in_parola = False
     
-    for c in a:
+    for c in a: #c diventa la costante
         if lettera(c):  # numero costante di operazioni c0
             if not in_parola: # numero costante di ops c1
                 parole += 1 # numero costante di ops c2
@@ -29,6 +29,7 @@ def conta_parole( a ):
         else:
             if in_parola: # numero costante di ops c4
                 in_parola = False # numero costante di ops c3
+                
         # costo del blocco:
         #
         #    c0+c1+c2+c3 oppure c0+c1 oppure c0+c4+c5
