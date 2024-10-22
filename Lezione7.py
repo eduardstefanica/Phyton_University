@@ -6,8 +6,6 @@ a= 'Eduardo'
 a= 'E' + a[1:]
 print (a)
 '''
-# In[]
-
 
 # In[Liste Phyton]
 '''
@@ -100,36 +98,6 @@ a = 10
 
 print(t)
 
-# In[Liste]
-
-a = [0, 'stringa', (1,2)]
-
-# len, indicizzazione, slicing, iterazione, concatenazione,
-# ripetizione, spacchettamento sono ammesse
-
-print(a)
-
-a[0] = '169'
-
-print(a, len(a))
-
-del(a[1])
-
-print(a, len(a))
-
-# In[]
-
-a = []
-
-
-a.append(100)
-a.append(200)
-
-print(a)
-
-a = a.append(0)  # ATTENZIONE, append ritorna None
-
-print(a)
 
 # In[]
 
